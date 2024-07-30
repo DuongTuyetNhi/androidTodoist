@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Todoist" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="Create task test">
+        <parameter name="emulator" value="emulator-5554"></parameter>
+        <classes>
+            <class name="tests.SignIn"></class>
+        </classes>
+    </test>
+
+<!--    <test name="Create task1 test">-->
+<!--        <parameter name="emulator" value="emulator-5556"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="tests.SignIn"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Create project test">-->
+<!--        <classes>-->
+<!--            <class name="tests.FunctionTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
